@@ -7,14 +7,14 @@ import LoadingPhoto from "../../assets/loadingPhoto.svg";
 interface DataType {
   key: string;
   name: string;
-  nrc: string;
-  role: string;
+  position: string;
+  qualification: string;
 }
 
 interface Voter {
   name: string;
-  identifier: string;
-  role: string;
+  position: string;
+  qualification: string;
 }
 
 // Define the type for the voters object where each property is a Voter
@@ -35,17 +35,17 @@ const columns: TableProps<DataType>["columns"] = [
     key: "name",
   },
   {
-    title: "NRC",
-    dataIndex: "nrc",
-    key: "nrc",
+    title: "position",
+    dataIndex: "position",
+    key: "position",
   },
   {
-    title: "Role",
-    key: "role",
-    dataIndex: "role",
-    render: (role) => (
-      <Tag color="green" key={role}>
-        {role.toUpperCase()}
+    title: "qualification",
+    key: "qualification",
+    dataIndex: "qualification",
+    render: (qualification) => (
+      <Tag color="green" key={qualification}>
+        {qualification.toUpperCase()}
       </Tag>
     ),
   },
@@ -61,12 +61,12 @@ export const Voters = () => {
       </div>
     );
   const formattedVoters = Object.entries(voters).map(
-    ([id, { name, identifier, role }]: [string, Voter]) => {
+    ([id, { name, position, qualification }]: [string, Voter]) => {
       return {
         key: id,
         name: name,
-        nrc: identifier,
-        role: role,
+        position: position,
+        qualification: qualification,
       };
     }
   );
