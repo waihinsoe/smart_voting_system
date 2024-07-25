@@ -27,7 +27,7 @@ const AppProvider = ({ children }: Props) => {
   const [appData, setAppData] = useState(defaultContext);
 
   useEffect(() => {
-    signInWithEmailAndPassword(auth, "waihinsoe332004@gmail.com", "332004mar")
+    signInWithEmailAndPassword(auth, "votingsystem27@gmail.com", "123@voting")
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;

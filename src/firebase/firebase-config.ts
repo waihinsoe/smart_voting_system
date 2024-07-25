@@ -7,14 +7,14 @@ import { getDatabase } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBwWzqzQlMdKrRYM_VQvnqryXoZqu_7-1E",
-  authDomain: "smart-voting-system-ef4d5.firebaseapp.com",
+  apiKey: "AIzaSyB_GmRi5EKE3YCSDfAR8eywn8bwhGTsZYA",
+  authDomain: "smart-voting-system-70e58.firebaseapp.com",
   databaseURL:
-    "https://smart-voting-system-ef4d5-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "smart-voting-system-ef4d5",
-  storageBucket: "smart-voting-system-ef4d5.appspot.com",
-  messagingSenderId: "67831783184",
-  appId: "1:67831783184:web:3ce38e50f5d81280504f95",
+    "https://smart-voting-system-70e58-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "smart-voting-system-70e58",
+  storageBucket: "smart-voting-system-70e58.appspot.com",
+  messagingSenderId: "135233190708",
+  appId: "1:135233190708:web:240bb396d70352ab280361",
 };
 
 // Initialize Firebase
